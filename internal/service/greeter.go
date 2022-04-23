@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	v1 "petstore/api/helloworld/v1"
-	"petstore/internal/biz"
+	v1 "github.com/raw34/petstore/api/helloworld/v1"
+	"github.com/raw34/petstore/internal/biz"
 )
 
 // GreeterService is a greeter service.

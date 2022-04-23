@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	"petstore/internal/conf"
+	"github.com/raw34/petstore/internal/conf"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/config"
 	"github.com/go-kratos/kratos/v2/config/file"

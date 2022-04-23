@@ -1,7 +1,7 @@
 package data
 
 import (
-	"petstore/internal/conf"
+	"github.com/raw34/petstore/internal/conf"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/google/wire"
 )

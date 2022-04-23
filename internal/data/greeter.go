@@ -3,7 +3,7 @@ package data
 import (
 	"context"
 
-	"petstore/internal/biz"
+	"github.com/raw34/petstore/internal/biz"
 	"github.com/go-kratos/kratos/v2/log"
 )
 
