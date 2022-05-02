@@ -21,5 +21,5 @@ func (s *GreeterService) GreeterSayHello(ctx context.Context, req *v1.GreeterSay
 	if err != nil {
 		return nil, err
 	}
-	return &v1.GreeterV1HelloReply{Message: "Hello " + g.Hello}, nil
+	return &v1.GreeterV1HelloReply{Message: "Hello " + g.Hello + ", From " + req.GetFrom() + ", Device " + req.GetDevice()}, nil
 }
