@@ -1,30 +1,29 @@
 syntax = "proto3";
 
-package greeter.v1;
+package greeter;
 
 import "google/api/annotations.proto";
 
-option go_package = "petstore/api/greeter/v1;v1";
-option java_multiple_files = true;
-option java_package = "dev.kratos.api.greeter.v1";
-option java_outer_classname = "GreeterProtoV1";
+import "google/protobuf/descriptor.proto";
 
-// The greeting service definition.
+option go_package = "petstore/api/greeter/v1;v1";
+
+message GreeterV1HelloReply {
+  string message = 1;
+}
+
+//Greeter_SayHelloParameters holds parameters to Greeter_SayHello
+message GreeterSayHelloRequest {
+  string name = 1;
+
+  string from = 2;
+
+  string device = 3;
+}
+
 service Greeter {
-  // Sends a greeting
-  rpc SayHello (HelloRequest) returns (HelloReply) {
-    option (google.api.http) = {
-      get: "/greeter/{name}"
-    };
+  rpc GreeterSayHello ( GreeterSayHelloRequest ) returns ( GreeterV1HelloReply ) {
+    option (google.api.http) = { get:"/greeter/{name}"  };
   }
 }
 
-// The request message containing the user's name.
-message HelloRequest {
-  string name = 1;
-}
-
-// The response message containing the greetings
-message HelloReply {
-  string message = 1;
-}
