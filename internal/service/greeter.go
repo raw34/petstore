@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	v1 "github.com/raw34/petstore/api/helloworld/v1"
+	v1 "github.com/raw34/petstore/api/greeter/v1"
 	"github.com/raw34/petstore/internal/biz"
 )
 

@@ -3,9 +3,9 @@ package biz
 import (
 	"context"
 
-	v1 "github.com/raw34/petstore/api/helloworld/v1"
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/log"
+	v1 "github.com/raw34/petstore/api/greeter/v1"
 )
 
 var (
