@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package helloworld.v1;
+package greeter.v1;
 
 import "google/api/annotations.proto";
 
 option go_package = "petstore/api/greeter/v1;v1";
 option java_multiple_files = true;
 option java_package = "dev.kratos.api.greeter.v1";
-option java_outer_classname = "HelloworldProtoV1";
+option java_outer_classname = "GreeterProtoV1";
 
 // The greeting service definition.
 service Greeter {

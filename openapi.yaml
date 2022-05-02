@@ -7,7 +7,7 @@ info:
     description: The greeting service definition.
     version: 0.0.1
 paths:
-    /helloworld/{name}:
+    /greeter/{name}:
         get:
             tags:
                 - Greeter
@@ -25,10 +25,10 @@ paths:
                     content:
                         application/json:
                             schema:
-                                $ref: '#/components/schemas/.helloworld.v1.HelloReply'
+                                $ref: '#/components/schemas/.greeter.v1.HelloReply'
 components:
     schemas:
-        .helloworld.v1.HelloReply:
+        .greeter.v1.HelloReply:
             type: object
             properties:
                 message:
